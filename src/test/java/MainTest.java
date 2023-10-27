@@ -21,12 +21,12 @@ public class MainTest {
 
         KoscheiTheDeathless koscheiTheDeathless =
                 applicationContext.getBean(KoscheiTheDeathless.class);
-        System.out.println(koscheiTheDeathless.getRulesByDeth());
-        String testText = koscheiTheDeathless.getRulesByDeth();
+        System.out.println(koscheiTheDeathless.getRulesByDeath());
+        String testText = koscheiTheDeathless.getRulesByDeath();
 
-        if (!testText.contains(text) && testText.length() <= text.length()) {
-            Assert.fail("Тест провален, не корректная связь бинов. Итоговая фраза не верна.");
-        }
+//        if (!testText.contains(text) && testText.length() <= text.length()) {
+//            Assert.fail("Тест провален, не корректная связь бинов. Итоговая фраза не верна.");
+//        }
+        Assert.assertEquals("Тест провален, некорректная связь бинов. Итоговая фраза не верна.", text, testText);
     }
-
 }
