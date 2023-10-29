@@ -21,8 +21,7 @@ public class KoscheiTheDeathless implements DisposableBean, BeanNameAware {
     private BigInteger age;
 
     public String getRulesByDeath() {
-//        return "На свете есть океан , " + ocean.toString();
-        return "abracadabra".repeat(15);
+        return "На свете есть океан , " + ocean.toString();
     }
 
     Logger logger = Logger.getLogger(KoscheiTheDeathless.class.getName());
